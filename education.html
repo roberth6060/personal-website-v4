@@ -4,9 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+      <!-- Linked css stylesheet -->
+      <link rel="stylesheet" href="./assets/css/index.css">
+    <title>Education</title>
 </head>
 <body>
-    <a href="./index.html"> Home</a>
+    <div class="main-container">
+        <!-- *********** HEADER SECTION *********** -->
+    <header class="header section">
+        <!-- NAVBAR -->
+        <nav>
+            <div id="logo">
+                <h1>Portfolio</h1>
+            </div>
+            <div class="menu">
+                <a href="./index.html">Home</a>
+                <a  href="./resume.html">Resume</a>
+                <a class="active" href="./education.html">Education</a>
+                <a href="./personal.html">Personal</a>
+            </div>
+        </nav>
+    </header>
+
+     <!-- *********** Education SECTION *********** -->
+     <section class="education-timeline">
+        <div class="container">
+            <div class="section-title">
+                <h1>Education Timeline</h1>
+                <p>Timeline of the numerous universities I attended</p>
+            </div>     
+            <ul class="timeline">
+                <!-- Item 1 -->
+                <li>
+                    <div class="right-side">
+                        <div class="school-container">
+                            <span class="school">RIT Croatia</span>
+                            <span class="time-container"><span class="time">2022 - present</span></span>
+                        </div>
+                        <div class="description">Bachelors of Science in Web and Mobile Computing</div>
+                    </div>
+                </li>
+              
+                <!-- Item 2 -->
+                <li>
+                    <div class="left-side">
+                        <div class="school-container">
+                            <span class="school">Chapman Unversity</span>
+                            <span class="time-container"><span class="time">2020 - 2022</span></span>
+                        </div>
+                        <div class="description">Masters of Business Administration</div>
+                    </div>
+                </li>
+            
+                <!-- Item 3 -->
+                <li>
+                    <div class="right-side">
+                        <div class="school-container">
+                            <span class="school">American Military Unversity</span>
+                            <span class="time-container"><span class="time">2015 - 2020</span></span>
+                        </div>
+                        <div class="description">Bachelors of Art in Business Administration</div>
+                    </div>
+                </li>
+              
+            </ul>
+        </div>
+     </section>
+    </div>
+       
 </body>
 </html>
