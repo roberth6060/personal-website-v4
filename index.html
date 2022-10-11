@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linked css stylesheet -->
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap" rel="stylesheet">
+    <!-- Linked Font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Homepage</title>
+</head>
+<body onload="mainText()">
+   <div class="main-container">
+    <!-- *********** HEADER SECTION *********** -->
+    <header class="header section">
+        <!-- NAVBAR -->
+        <nav>
+            <div id="logo">
+                <h1>Portfolio</h1>
+            </div>
+            <div class="menu">
+                <a href="./index.html">Home</a>
+                <a href="./resume.html">Resume</a>
+                <a href="./education.html">Education</a>
+                <a href="./personal.html">Personal</a>
+            </div>
+        </nav>
+        <div class="home">
+            <div class="img-section">
+                <img src="./assets/imgs/profile.JPG" class="profile" alt="Profile Picture" width="500">
+            </div>
+            <div class="title-section">
+                <div class="title">
+                    <h1>Robert's Website</h1>
+                </div>
+            <div ><a href="./assets/docs/Robert-Haye-Resume.pdf" class="btn">My Resume</a></div>
+            </div>
+            <div class="social-media">
+                <hr id="top">
+                <a href="https://github.com/roberth6060"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/robert-haye-060945179/"><i class="fa-brands fa-linkedin"></i>
+                </a>
+                <hr id="bottom">
+            </div>
+        </div>
+    </header>
+    <!-- *********** ABOUT SECTION *********** -->
+    <section class="about">
+       <div class="container">
+        <div class="section-title"><h2 class="header2">aboute me</h2></div>
+        <div class="row">
+            <div class="text-container">
+                <div class="typed-container">
+                    <h3 class="hello">I'm Robert and I am a <span id="typing">web developer</span></h3>
+                    
+                </div>
+                <p>Technology is a subject matter I am very passionate about, and there is nothing I appreciate more than learning about new technological advancements. Since my adolescent days growing up in Saint Mary, Jamaica I have had a keen interest in any subject matter related to technology, problem solving, and art. My early interests led to my full transition to pursuing the technical field to gain in-depth knowledge in different aspects of Information Technology. I aspire to continuously sharpen my expertise in the frontend, backend, database, and cloud development. Efficiency is really important to me, and I am constantly looking for new and more efficient ways to achieve my goals.</p>
+                <hr/>
+
+                <div class="row">
+                   <div class="knowledge-content">
+                     <!-- Frontend -->
+                     <div class="card-container">
+                        <i class="fa-solid fa-laptop"></i>
+                        <card class="card-title">
+                            Frontend
+                        </card>
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis.
+                        </div>
+                    </div>
+
+                     <!-- Backend -->
+                     <div class="card-container">
+                        <i class="fa-solid fa-code"></i>
+                        <card class="card-title">
+                            Backend
+                        </card>
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis.
+                        </div>
+                    </div>
+
+                     <!-- Backend -->
+                     <div class="card-container">
+                        <i class="fa-solid fa-database"></i>
+                        <card class="card-title">
+                            Database
+                        </card>
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis.
+                        </div>
+                    </div>
+
+                     <!-- Frontend -->
+                     <div class="card-container">
+                        <i class="fa-solid fa-pen-nib"></i>
+                        <card class="card-title">
+                            Graphic Design
+                        </card>
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis.
+                        </div>
+                    </div>
+                   </div>
+                </div>
+
+            </div>
+            <div class="img-container"></div>
+        </div>
+       </div>
+    </section>
+
+    <section class="purpose">
+        <div class="container">
+            <div class="section-title">
+                <h2>Purpose of this website?</h2>
+            </div>
+            
+        </div>
+    </section>
+   </div>
+   <!-- Linked Javascript -->
+   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+   <script>
+    function mainText() {
+        var typed = new Typed("#typing", {
+          strings: ["", "web designer", "web developer", "graphic designer"],
+          typeSpeed: 100,
+          backSpeed: 60,
+          startDelay: 0,
+          loop: true,
+        });
+    }
+   </script>
+</body>
+</html>
