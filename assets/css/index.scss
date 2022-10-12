@@ -12,6 +12,17 @@ body {
   height: 100%;
   width: 100%;
 }
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font: 36px;
+}
+
+h1,
+h2 {
+  text-transform: capitalize;
+}
 p {
   font-size: 19px;
 }
@@ -80,9 +91,10 @@ nav {
   padding: 20px 50px;
 
   #logo {
-    font-size: 28px;
-    font-family: "Comforter Brush", cursive;
+    font-size: 28px !important;
+
     h1 {
+      font-family: "Comforter Brush", cursive !important;
       color: red;
     }
   }
@@ -143,8 +155,10 @@ nav {
     padding: 20px 0;
 
     .title {
-      font-size: 40px;
       padding-bottom: 100px;
+      h1 {
+        font-size: 50px !important;
+      }
     }
   }
 }
@@ -238,12 +252,12 @@ nav {
   }
 
   .text-container {
-    padding: 10px;
     width: 65%;
 
     text-align: center;
 
     p {
+      padding: 0 50px;
       text-align: start;
     }
 
@@ -281,9 +295,9 @@ nav {
     margin: 20px;
     justify-content: center;
     align-items: center;
-    text-align: start;
-    padding: 15px 10px;
+    text-align: center;
     font-size: 16px;
+    row-gap: 20px;
 
     .fa-solid {
       font-size: 24px;
@@ -292,6 +306,9 @@ nav {
     .card-title {
       color: red;
       font-size: 20px;
+    }
+    .card-body {
+      padding: 0 20px;
     }
   }
 
@@ -313,6 +330,10 @@ nav {
     .img-content {
       width: 50%;
       min-width: 50%;
+      background-image: url("../imgs/target.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
     }
     .text-content {
       width: 50%;
@@ -321,7 +342,7 @@ nav {
   }
 }
 
-/* ================ The Timeline ================ */
+/* =============== EDUCATION TIMELINE ================ */
 
 .timeline {
   position: relative;
@@ -535,17 +556,29 @@ span.school {
   }
 }
 .modal {
+  overflow-y: scroll;
   border-radius: 10px;
   z-index: 10;
   position: absolute;
-  transform: translate(-50%, -50%);
-  padding: 2em;
+  transform: translate(-50%, -30%);
+  padding: 4em;
   box-shadow: 0 3em 5em rgba(0, 0, 0, 0.3);
-
+  max-height: 400px;
   top: 50%;
   left: 50%;
   width: 70%;
   background-color: whitesmoke;
+
+  ul {
+    li {
+      list-style: circle;
+      ol {
+        li {
+          list-style: decimal;
+        }
+      }
+    }
+  }
 }
 
 .overlay {
