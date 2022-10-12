@@ -5,18 +5,26 @@
   text-decoration: none;
   color: black;
   list-style: none;
+  font-family: "Roboto Slab", serif;
 }
 body {
   position: relative;
+  height: 100%;
+  width: 100%;
+}
+p {
+  font-size: 19px;
 }
 
 .main-container {
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 }
 section {
   width: 100vw;
-  // height: 100vh;
+  height: 100vh;
   max-height: auto;
+  height: 100%;
 }
 .row {
   display: flex;
@@ -56,6 +64,10 @@ a {
 p {
   line-height: 2;
 }
+
+.hidden {
+  display: none;
+}
 /** ================== NAVEBAR ================== */
 
 nav {
@@ -85,19 +97,19 @@ nav {
 
   .active {
     padding: 10px 20px;
-    background-color: red;
+    background-color: #5d666e;
     color: #ffffff !important;
     border-radius: 10px;
   }
 
   a {
-    color: #5d666e;
+    padding: 10px 20px;
+    // color: #5d666e;
 
-    &:hover {
-      padding: 10px 20px;
+    &:hover:not(.active) {
       background-color: red;
       color: #ffffff !important;
-      transition: 0.4s ease-in;
+      transition: 0.6s;
       border-radius: 10px;
     }
   }
@@ -132,26 +144,22 @@ nav {
 
     .title {
       font-size: 40px;
-      position: absolute;
-      top: 100px;
-      left: 40%;
-      font-family: "Satisfy", cursive;
+      padding-bottom: 100px;
     }
   }
 }
 
 /* ** BTN ** */
 .btn {
-  background: #5d666e;
-  background-image: -webkit-linear-gradient(top, #5d666e, #5d666e);
-  background-image: -moz-linear-gradient(top, #5d666e, #5d666e);
-  background-image: -ms-linear-gradient(top, #5d666e, #5d666e);
-  background-image: -o-linear-gradient(top, #5d666e, #5d666e);
-  background-image: linear-gradient(to bottom, #5d666e, #5d666e);
+  background: red;
+  background-image: -webkit-linear-gradient(top, red, red);
+  background-image: -moz-linear-gradient(top, red, red);
+  background-image: -ms-linear-gradient(top, red, red);
+  background-image: -o-linear-gradient(top, red, red);
+  background-image: linear-gradient(to bottom, red, red);
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 10px;
-  font-family: Arial;
   color: #ffffff;
   font-size: 28px;
   padding: 20px 40px;
@@ -159,13 +167,14 @@ nav {
 }
 
 .btn:hover {
+  transform: scale(1.5) !important;
   transition: 0.8s;
-  background: red;
-  background-image: -webkit-linear-gradient(top, red, red);
-  background-image: -moz-linear-gradient(top, red, red);
-  background-image: -ms-linear-gradient(top, red, red);
-  background-image: -o-linear-gradient(top, red, red);
-  background-image: linear-gradient(to bottom, red, red);
+  background: #5d666e;
+  background-image: -webkit-linear-gradient(top, #5d666e, #5d666e);
+  background-image: -moz-linear-gradient(top, #5d666e, #5d666e);
+  background-image: -ms-linear-gradient(top, #5d666e, #5d666e);
+  background-image: -o-linear-gradient(top, #5d666e, #5d666e);
+  background-image: linear-gradient(to bottom, #5d666e, #5d666e);
   text-decoration: none;
 }
 
@@ -517,106 +526,44 @@ nav {
   line-height: 1.5em;
 }
 
-/* ================ Timeline Media Queries ================ */
+/******** Modal ********/
+span.school {
+  cursor: pointer;
+  &:hover {
+    background-color: red;
+    transition: 0.3 ease;
+  }
+}
+.modal {
+  border-radius: 10px;
+  z-index: 10;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 2em;
+  box-shadow: 0 3em 5em rgba(0, 0, 0, 0.3);
 
-// @media screen and (max-width: 660px) {
-//   .timeline {
-//     width: 100%;
-//     padding: 4em 0 1em 0;
-//   }
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  background-color: whitesmoke;
+}
 
-//   .timeline li {
-//     padding: 2em 0;
-//   }
+.overlay {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(3px);
+}
 
-//   .direction-l,
-//   .right-side {
-//     float: none;
-//     width: 100%;
-
-//     text-align: center;
-//   }
-
-//   .flag-wrapper {
-//     text-align: center;
-//   }
-
-//   .flag {
-//     background: rgb(255, 255, 255);
-//     z-index: 15;
-//   }
-
-//   .direction-l .flag:before,
-//   .right-side .flag:before {
-//     position: absolute;
-//     top: -30px;
-//     left: 50%;
-//     content: " ";
-//     display: block;
-//     width: 12px;
-//     height: 12px;
-//     margin-left: -9px;
-//     background: #fff;
-//     border-radius: 10px;
-//     border: 4px solid rgb(255, 80, 80);
-//     z-index: 10;
-//   }
-
-//   .direction-l .flag:after,
-//   .right-side .flag:after {
-//     content: "";
-//     position: absolute;
-//     left: 50%;
-//     top: -8px;
-//     height: 0;
-//     width: 0;
-//     margin-left: -8px;
-//     border: solid transparent;
-//     border-bottom-color: rgb(255, 255, 255);
-//     border-width: 8px;
-//     pointer-events: none;
-//   }
-
-//   .time-wrapper {
-//     display: block;
-//     position: relative;
-//     margin: 4px 0 0 0;
-//     z-index: 14;
-//   }
-
-//   .direction-l .time-wrapper {
-//     float: none;
-//   }
-
-//   .right-side .time-wrapper {
-//     float: none;
-//   }
-
-//   .desc {
-//     position: relative;
-//     margin: 1em 0 0 0;
-//     padding: 1em;
-//     background: rgb(245, 245, 245);
-//     -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
-//     -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
-//     box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
-
-//     z-index: 15;
-//   }
-
-//   .direction-l .desc,
-//   .right-side .desc {
-//     position: relative;
-//     margin: 1em 1em 0 1em;
-//     padding: 1em;
-
-//     z-index: 15;
-//   }
-// }
-
-// @media screen and (min-width: 400px ?? max-width: 660px) {
-//   .direction-l .desc,
-//   .direction-r .desc {
-//     margin: 1em 4em 0 4em;
-//   }
-// }
+.close-modal {
+  position: absolute;
+  top: 0.5em;
+  right: 1em;
+  font-size: 2em;
+  columns: black;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
