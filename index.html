@@ -1,137 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Linked css stylesheet -->
-    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/index.css" />
     <!-- Linked Font awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Homepage</title>
-</head>
-<body onload="mainText()">
-   <div class="main-container">
-    <!-- *********** HEADER SECTION *********** -->
-    <header class="header section">
+  </head>
+  <body onload="mainText()">
+    <div class="main-container">
+      <!-- *********** HEADER SECTION *********** -->
+      <header class="header section">
         <!-- NAVBAR -->
         <nav>
-            <div id="logo">
-                <h1>Portfolio</h1>
-            </div>
-            <div class="menu">
-                <a class="active" href="./index.html">Home</a>
-                <a href="./resume.html">Resume</a>
-                <a href="./education.html">Education</a>
-                <a href="./personal.html">Personal</a>
-            </div>
+          <div id="logo">
+            <a href="./index.html"><h1>Portfolio</h1></a>
+          </div>
+          <div class="menu">
+            <a class="active" href="./index.html">Home</a>
+            <a href="./resume.html">Resume</a>
+            <a href="./education.html">Education</a>
+            <a href="./personal.html">Personal</a>
+          </div>
         </nav>
         <div class="home">
-            <div class="img-section">
-                <img src="./assets/imgs/profile.JPG" class="profile" alt="Profile Picture" width="500">
+          <div class="img-section">
+            <img
+              src="./assets/imgs/profile.JPG"
+              class="profile"
+              alt="Profile Picture"
+              width="500"
+            />
+          </div>
+          <div class="title-section">
+            <div class="title">
+              <h1>Welcome to my website</h1>
             </div>
-            <div class="title-section">
-                <div class="title">
-                    <h1>Welcome to my website</h1>
-                </div>
-            <div ><a href="./assets/docs/Robert-Haye-Resume.pdf" class="btn">My Resume</a></div>
+            <div>
+              <a href="./assets/docs/Robert-Haye-Resume.pdf" class="btn"
+                >My Resume</a
+              >
             </div>
-            <div class="social-media">
-                <hr id="top">
-                <a href="https://github.com/roberth6060"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/robert-haye-060945179/"><i class="fa-brands fa-linkedin"></i>
-                </a>
-                <hr id="bottom">
-            </div>
+          </div>
+          <div class="social-media">
+            <hr id="top" />
+            <a href="https://github.com/roberth6060"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/robert-haye-060945179/"
+              ><i class="fa-brands fa-linkedin"></i>
+            </a>
+            <hr id="bottom" />
+          </div>
         </div>
-    </header>
-    <!-- *********** ABOUT SECTION *********** -->
-    <section class="about">
-       <div class="container">
-        <div class="section-title"><h2 class="header2">About Me</h2></div>
-        <div class="row">
+      </header>
+      <!-- *********** ABOUT SECTION *********** -->
+      <section class="about">
+        <div class="home-container">
+          <div class="section-title"><h2 class="header2">About Me</h2></div>
+          <div class="row">
             <div class="text-container">
-                <div class="typed-container">
-                    <h3 class="hello">I'm Robert and I am a <span id="typing">web developer</span></h3>
-                    
+              <div class="typed-container">
+                <h3 class="hello">
+                  I'm Robert and I am a <span id="typing">web developer</span>
+                </h3>
+              </div>
+              <p>
+                Technology is a subject matter I am very passionate about, and
+                there is nothing I appreciate more than learning about new
+                technological advancements. Since my adolescent days growing up
+                in Saint Mary, Jamaica I have had a keen interest in any subject
+                matter related to technology, problem solving, and art. My early
+                interests led to my full transition to pursuing the technical
+                field to gain in-depth knowledge in different aspects of
+                Information Technology. I aspire to continuously sharpen my
+                expertise in the frontend, backend, database, and cloud
+                development. Efficiency is really important to me, and I am
+                constantly looking for new and more efficient ways to achieve my
+                goals.
+              </p>
+              <hr />
+
+              <div class="row">
+                <div class="knowledge-content">
+                  <!-- Frontend -->
+                  <div class="card-container">
+                    <i class="fa-solid fa-laptop"></i>
+                    <card class="card-title"> Frontend </card>
+                    <div class="card-body">
+                      Able to utilize HTML, SASS/CSS, and JavaScript to make
+                      dynamic, responsive, and beautifully designed webpages and
+                      full featured web applications
+                    </div>
+                  </div>
+
+                  <!-- Backend -->
+                  <div class="card-container">
+                    <i class="fa-solid fa-code"></i>
+                    <card class="card-title"> Backend </card>
+                    <div class="card-body">
+                      Using node.js I am able to write effective code that
+                      successfully creates responsive backends that connect to
+                      the frontend and the database to help bring users a smooth
+                      web application experience
+                    </div>
+                  </div>
+
+                  <!-- Database -->
+                  <div class="card-container">
+                    <i class="fa-solid fa-database"></i>
+                    <card class="card-title"> Database </card>
+                    <div class="card-body">
+                      Being well versed in SQL and NoSQL I am able to design
+                      database implementations, structure proper model
+                      relationships and use effective queries for retrieving
+                      data
+                    </div>
+                  </div>
+
+                  <!-- Graphic Design -->
+                  <div class="card-container">
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <card class="card-title"> Graphic Design </card>
+                    <div class="card-body">
+                      Knowledge in photo editing, typography, layers, print
+                      design in Adobe photoshop and XD
+                    </div>
+                  </div>
                 </div>
-                <p>Technology is a subject matter I am very passionate about, and there is nothing I appreciate more than learning about new technological advancements. Since my adolescent days growing up in Saint Mary, Jamaica I have had a keen interest in any subject matter related to technology, problem solving, and art. My early interests led to my full transition to pursuing the technical field to gain in-depth knowledge in different aspects of Information Technology. I aspire to continuously sharpen my expertise in the frontend, backend, database, and cloud development. Efficiency is really important to me, and I am constantly looking for new and more efficient ways to achieve my goals.</p>
-                <hr/>
-
-                <div class="row">
-                   <div class="knowledge-content">
-                     <!-- Frontend -->
-                     <div class="card-container">
-                        <i class="fa-solid fa-laptop"></i>
-                        <card class="card-title">
-                            Frontend
-                        </card>
-                        <div class="card-body">
-                            Able to utilize HTML, SASS/CSS, and JavaScript to make dynamic, responsive, and beautifully designed webpages and full featured web applications
-                        </div>
-                    </div>
-
-                     <!-- Backend -->
-                     <div class="card-container">
-                        <i class="fa-solid fa-code"></i>
-                        <card class="card-title">
-                            Backend
-                        </card>
-                        <div class="card-body">
-                            Using node.js I am able to write effective code that successfully creates responsive backends that connect to the frontend and the database to help bring users a smooth web application experience
-                        </div>
-                    </div>
-
-                     <!-- Database -->
-                     <div class="card-container">
-                        <i class="fa-solid fa-database"></i>
-                        <card class="card-title">
-                            Database
-                        </card>
-                        <div class="card-body">
-                            Being well versed in SQL and NoSQL I am able to design database implementations, structure proper model relationships and use effective queries for retrieving data
-                        </div>
-                    </div>
-
-                     <!-- Graphic Design -->
-                     <div class="card-container">
-                        <i class="fa-solid fa-pen-nib"></i>
-                        <card class="card-title">
-                            Graphic Design
-                        </card>
-                        <div class="card-body">
-                            Knowledge in photo editing, typography, layers, print design in  Adobe photoshop and XD
-                        </div>
-                    </div>
-                   </div>
-                </div>
-
+              </div>
             </div>
             <div class="img-container"></div>
+          </div>
         </div>
-       </div>
-    </section>
+      </section>
 
-    <section class="purpose">
-        <div class="container">
-            <div class="section-title">
-                <h2>Purpose of this website?</h2>
-            </div>
+      <section class="purpose">
+        <div class="home-container">
+          <div class="section-title">
+            <h2>Purpose of this website?</h2>
+          </div>
           <div class="row">
             <div class="img-content"></div>
             <div class="text-content">
-                <p>U.S. Marine Corps veteran and full-stack developer with a keen understanding of design, content writing and assembly, coding, testing, and maintaining websites. Equipped with a diverse and promising skill-set with an inquiring mind to further my understanding and comprehension of web and software development. Proficient in various frameworks, programming languages, and platforms. Able to work efficiently as a team member, team leader, or independently on any project in both stressful and relaxed working environments. </p>
+              <p>
+                U.S. Marine Corps veteran and full-stack developer with a keen
+                understanding of design, content writing and assembly, coding,
+                testing, and maintaining websites. Equipped with a diverse and
+                promising skill-set with an inquiring mind to further my
+                understanding and comprehension of web and software development.
+                Proficient in various frameworks, programming languages, and
+                platforms. Able to work efficiently as a team member, team
+                leader, or independently on any project in both stressful and
+                relaxed working environments.
+              </p>
             </div>
           </div>
-            
         </div>
-    </section>
-   </div>
-   <!-- Linked Javascript -->
-   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      </section>
+    </div>
+    <!-- Linked Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-   <script>
-    function mainText() {
+    <script>
+      function mainText() {
         var typed = new Typed("#typing", {
           strings: ["", "web designer", "web developer", "graphic designer"],
           typeSpeed: 100,
@@ -139,7 +180,7 @@
           startDelay: 0,
           loop: true,
         });
-    }
-   </script>
-</body>
+      }
+    </script>
+  </body>
 </html>

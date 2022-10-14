@@ -20,7 +20,7 @@ const schoolData = [
         <li>The American College of Management and Technology (ACMT) was formed in 1995</li>
         <li>Rochester Institute of Technology and the Ministry of Science sign a cooperation agreement making ACMT the first and only private college in Croatia granting dual degrees for undergraduate programs</li>
         <li>RIT is located in Dubrovnik, and in Zagreb, Croatia</li>
-        <li>The following programs are offered at at RIT:
+        <li>The following programs are offered at RIT:
             <ol>
             <li>Msc. Service Leadership and Innovation</li>
             <li>Bsc. Tourism and Hospitality</li>
@@ -33,7 +33,7 @@ const schoolData = [
   },
 
   {
-    name: "Chapman Unversity",
+    name: "Chapman University",
     content: `<ul>
         <li>Regionally Accredited</li><li>Accredited by: the Western Association of Schools and Colleges, Accrediting Commission for Senior Colleges and Universities</li>
       </ul>
@@ -41,7 +41,7 @@ const schoolData = [
       <ul>
         <li>Private research university in Orange, California</li>
         <li>Founded in 1861 in Woodland, California, by the Christian Church (Disciples of Christ) under the name Hesperian College</li>
-        <li>Chapman University and Anglo-American University have partnered to offer a unique opportunity for students to earn an MBA in just 17 months in Prague</li>
+        <li>Chapman University and Anglo-American University have partnered to offer a unique opportunity for students to earn an MBA in just 17 months in Prague, Czech Republic</li>
         <li>Courses are delivered in an intensive weekend format, this 46-credit MBA program is taught by both Chapman faculty and AAU faculty</li>
       </ul>
       `,
@@ -106,6 +106,7 @@ timeline.addEventListener("click", (e) => {
     const [school] = schoolData.filter((school) => school.name === schoolName);
     modalTitle.textContent = school.name;
     modalImg.src = school.img;
+    modalImg.alt = school.name;
     modalBody.innerHTML = `
     <h2>Important Information</h2>
     <hr width ="50%"/><h3>Accreditation</h3>${school.content}`;

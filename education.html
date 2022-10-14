@@ -1,85 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- Linked css stylesheet -->
-      <link rel="stylesheet" href="./assets/css/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Linked css stylesheet -->
+    <link rel="stylesheet" href="./assets/css/index.css" />
     <title>Education</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="main-container">
-        <!-- *********** HEADER SECTION *********** -->
-    <header class="header section">
+      <!-- *********** HEADER SECTION *********** -->
+      <header class="header section">
         <!-- NAVBAR -->
         <nav>
-            <div id="logo">
-                <h1>Portfolio</h1>
-            </div>
-            <div class="menu">
-                <a href="./index.html">Home</a>
-                <a  href="./resume.html">Resume</a>
-                <a class="active" href="./education.html">Education</a>
-                <a href="./personal.html">Personal</a>
-            </div>
+          <div id="logo">
+            <a href="./index.html"><h1>Portfolio</h1></a>
+          </div>
+          <div class="menu">
+            <a href="./index.html">Home</a>
+            <a href="./resume.html">Resume</a>
+            <a class="active" href="./education.html">Education</a>
+            <a href="./personal.html">Personal</a>
+          </div>
         </nav>
-    </header>
+      </header>
 
-     <!-- *********** Education SECTION *********** -->
-     <section class="education-timeline">
+      <!-- *********** Education SECTION *********** -->
+      <section class="education-timeline">
         <div class="container">
-            <div class="section-title">
-                <h1>Education Timeline</h1>
-                <p>Timeline of the numerous universities I attended</p>
-            </div>     
-            <ul class="timeline">
-                <!-- Item 1 -->
-                <li>
-                    <div class="right-side">
-                        <div class="school-container">
-                            <span class="school show-modal">RIT Croatia</span>
-                            <span class="time-container"><span class="time">2022 - present</span></span>
-                        </div>
-                        <div class="description">Bachelors of Science in Web and Mobile Computing</div>
-                    </div>
-                </li>
-              
-                <!-- Item 2 -->
-                <li>
-                    <div class="left-side">
-                        <div class="school-container">
-                            <span class="school show-modal">Chapman Unversity</span>
-                            <span class="time-container"><span class="time">2020 - 2022</span></span>
-                        </div>
-                        <div class="description">Masters of Business Administration</div>
-                    </div>
-                </li>
-            
-                <!-- Item 3 -->
-                <li>
-                    <div class="right-side">
-                        <div class="school-container">
-                            <span class="school show-modal">American Military Unversity</span>
-                            <span class="time-container"><span class="time">2015 - 2020</span></span>
-                        </div>
-                        <div class="description">Bachelors of Art in Business Administration</div>
-                    </div>
-                </li>
-            </ul>
+          <div class="section-title">
+            <h1>Education Timeline</h1>
+            <p>Timeline of the numerous universities I attended</p>
+          </div>
+          <ul class="timeline">
+            <!-- Item 1 -->
+            <li>
+              <div class="right-side">
+                <div class="school-container">
+                  <span class="school show-modal">RIT Croatia</span>
+                  <span class="time-container"
+                    ><span class="time">2022 - present</span></span
+                  >
+                </div>
+                <div class="description">
+                  Bachelors of Science in Web and Mobile Computing
+                </div>
+              </div>
+            </li>
+
+            <!-- Item 2 -->
+            <li>
+              <div class="left-side">
+                <div class="school-container">
+                  <span class="school show-modal">Chapman University</span>
+                  <span class="time-container"
+                    ><span class="time">2020 - 2022</span></span
+                  >
+                </div>
+                <div class="description">
+                  Masters of Business Administration
+                </div>
+              </div>
+            </li>
+
+            <!-- Item 3 -->
+            <li>
+              <div class="right-side">
+                <div class="school-container">
+                  <span class="school show-modal"
+                    >American Military Unversity</span
+                  >
+                  <span class="time-container"
+                    ><span class="time">2015 - 2020</span></span
+                  >
+                </div>
+                <div class="description">
+                  Bachelors of Art in Business Administration
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
         <!-- Modal -->
         <div class="modal hidden">
-            <button class="close-modal" >&times;</button>
-            <h1 class="modal-title">Unversity Name</h1>
-            <img alt="School" class="model-img" width="180" height="180">
-            <p class="model-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos fuga deserunt praesentium assumenda qui voluptas odio ipsa expedita corrupti. Ipsa aspernatur eligendi, odit sit nam cumque quidem unde laudantium, accusantium veniam officia quis quas tempore perspiciatis quasi possimus asperiores illo incidunt nulla reprehenderit distinctio rerum saepe molestiae. Excepturi, omnis numquam.</p>
-          
+          <button class="close-modal">&times;</button>
+          <h1 class="modal-title">Unversity Name</h1>
+          <img alt="School" class="model-img" width="180" height="180" />
+          <p class="model-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos fuga
+            deserunt praesentium assumenda qui voluptas odio ipsa expedita
+            corrupti. Ipsa aspernatur eligendi, odit sit nam cumque quidem unde
+            laudantium, accusantium veniam officia quis quas tempore
+            perspiciatis quasi possimus asperiores illo incidunt nulla
+            reprehenderit distinctio rerum saepe molestiae. Excepturi, omnis
+            numquam.
+          </p>
         </div>
         <div class="overlay hidden"></div>
-     </section>
+      </section>
     </div>
-       <!-- Linked JavaScript -->
-       <script src="./assets/js/script.js"></script>
-</body>
+    <!-- Linked JavaScript -->
+    <script src="./assets/js/education.js"></script>
+  </body>
 </html>
