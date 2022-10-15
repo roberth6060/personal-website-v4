@@ -5,27 +5,27 @@ const hobbies = [
   {
     title: "Running",
     content:
-      "I'm a huge sports fan. I love riding my bike and I practice ultimate frisbee (Yes, it is a real sport)",
+      "I love running to stay in optimal physical shape. My typical workout each week is 20 pull ups, 100 crunches, and 30 mins of running",
   },
   {
     title: "Coding",
     content:
-      "I really enjoy coding, specially at night time. I have to be careful tho, since I've stayed coding overnight several times",
+      "I really enjoy coding, especially at night time. I typically spend hours coding each day; sometimes until 2 am",
   },
   {
     title: "Gaming",
     content:
-      "I am an avid gamer. my favourite games are Modern Warfare, Skyrim ",
+      "I am an avid gamer. my favourite games to play are Modern Warfare, CyberPunk, Skyrim, Squad, and Witcher 3 ",
   },
   {
     title: "Cooking",
     content:
-      "I'm not a cook, but I manage to get some stuff done. I love trying out veggie food",
+      "I am not the best cook, but I manage to get some stuff done. I am currently learning how to cook Jamaican cuisines with ingredients available in Croatia",
   },
   {
     title: "Reading",
     content:
-      "I love reading books mostly non-fiction. I am a big fan of Stephen King",
+      "I love reading books on weekends. I mostly like reading autobiography, but I am still a big fan of Stephen King",
   },
 ];
 //Map over hobbies data and render it on page:

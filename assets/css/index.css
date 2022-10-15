@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Satisfy&display=swap");
+:root {
+  --d: 700ms;
+  --e: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
 * {
   margin: 0;
-  padding: auto;
   box-sizing: border-box;
 }
 
@@ -44,7 +48,6 @@ p {
 
 section {
   width: 100vw;
-  max-height: auto;
   height: 100%;
 }
 
@@ -102,7 +105,7 @@ nav {
   padding: 20px 50px;
   align-items: center;
 }
-nav #logo h1 {
+nav #logo span {
   font-size: 35px !important;
   font-family: "Comforter Brush", cursive !important;
   color: red;
@@ -167,6 +170,14 @@ nav #logo h1 {
 }
 
 /* ** BTN ** */
+.btn-container {
+  padding: 1em 0;
+}
+.btn-container a {
+  font-size: 18px;
+  padding: 10px;
+}
+
 .btn {
   background: red;
   background-image: -webkit-linear-gradient(top, red, red);
@@ -290,7 +301,7 @@ nav #logo h1 {
 }
 .about .card-container:hover {
   transform: scale(1.1);
-  transition: 0.8 ease;
+  transition: 0.8s ease;
 }
 .about .card-container .fa-solid {
   font-size: 24px;
@@ -531,7 +542,7 @@ span.school {
 }
 span.school:hover {
   background-color: red;
-  transition: 0.3 ease;
+  transition: 0.3s ease;
 }
 
 .modal {
@@ -539,13 +550,13 @@ span.school:hover {
   border-radius: 10px;
   z-index: 10;
   position: absolute;
-  transform: translate(-50%, -30%);
+  transform: translate(-50%, -25%);
   padding: 4em;
   box-shadow: 0 3em 5em rgba(0, 0, 0, 0.3);
-  max-height: 400px;
+  max-height: 700px;
   top: 50%;
   left: 50%;
-  width: 70%;
+  width: 60%;
   background-color: whitesmoke;
 }
 .modal ul li {
@@ -569,25 +580,17 @@ span.school:hover {
   top: 0.5em;
   right: 1em;
   font-size: 2em;
-  columns: black;
   cursor: pointer;
   border: none;
   background: none;
 }
 
 /* =============== PERSONAL TIMELINE ================ */
-:root {
-  --d: 700ms;
-  --e: cubic-bezier(0.19, 1, 0.22, 1);
-  --font-sans: "Rubik", sans-serif;
-  --font-serif: "Cardo", serif;
-}
-
 .hobbies-content,
 .countries-content {
+  padding-top: 1em;
   display: grid;
   grid-gap: 1rem;
-  font-family: var(--font-sans);
 }
 @media (min-width: 600px) {
   .hobbies-content,
@@ -675,16 +678,16 @@ span.school:hover {
 }
 
 .title {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.2;
 }
 
 .body {
-  font-family: var(--font-serif);
   font-size: 1.125rem;
   font-style: italic;
   line-height: 1.35;
+  text-align: left;
 }
 
 @media (hover: hover) and (min-width: 600px) {
